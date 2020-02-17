@@ -14,6 +14,11 @@
 		B870C22423FB0CB6005527D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B870C22323FB0CB6005527D7 /* Assets.xcassets */; };
 		B870C22723FB0CB6005527D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B870C22523FB0CB6005527D7 /* LaunchScreen.storyboard */; };
 		B870C22A23FB0CB6005527D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B870C22923FB0CB6005527D7 /* main.m */; };
+		B870C23223FB0D2C005527D7 /* UIScrollView+InteractiveHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B870C23023FB0D2C005527D7 /* UIScrollView+InteractiveHeader.m */; };
+		B870C23823FB10F9005527D7 /* UINavigationBar+InteractiveHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B870C23723FB10F9005527D7 /* UINavigationBar+InteractiveHeader.m */; };
+		B870C23B23FB111C005527D7 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B870C23A23FB111C005527D7 /* UIImage+ImageWithColor.m */; };
+		B870C23E23FB117A005527D7 /* UIColor+Interpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = B870C23C23FB117A005527D7 /* UIColor+Interpolation.m */; };
+		B870C24023FB1509005527D7 /* banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B870C23F23FB1509005527D7 /* banner.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		B870C22623FB0CB6005527D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B870C22823FB0CB6005527D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B870C22923FB0CB6005527D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B870C23023FB0D2C005527D7 /* UIScrollView+InteractiveHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+InteractiveHeader.m"; sourceTree = "<group>"; };
+		B870C23123FB0D2C005527D7 /* UIScrollView+InteractiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+InteractiveHeader.h"; sourceTree = "<group>"; };
+		B870C23623FB10F9005527D7 /* UINavigationBar+InteractiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+InteractiveHeader.h"; sourceTree = "<group>"; };
+		B870C23723FB10F9005527D7 /* UINavigationBar+InteractiveHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+InteractiveHeader.m"; sourceTree = "<group>"; };
+		B870C23923FB111C005527D7 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		B870C23A23FB111C005527D7 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		B870C23C23FB117A005527D7 /* UIColor+Interpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Interpolation.m"; sourceTree = "<group>"; };
+		B870C23D23FB117A005527D7 /* UIColor+Interpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Interpolation.h"; sourceTree = "<group>"; };
+		B870C23F23FB1509005527D7 /* banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +75,14 @@
 		B870C21623FB0CB2005527D7 /* CSInteractiveHeaders */ = {
 			isa = PBXGroup;
 			children = (
+				B870C23F23FB1509005527D7 /* banner.jpg */,
 				B870C21723FB0CB2005527D7 /* AppDelegate.h */,
 				B870C21823FB0CB2005527D7 /* AppDelegate.m */,
 				B870C21A23FB0CB2005527D7 /* SceneDelegate.h */,
 				B870C21B23FB0CB2005527D7 /* SceneDelegate.m */,
 				B870C21D23FB0CB2005527D7 /* ViewController.h */,
 				B870C21E23FB0CB2005527D7 /* ViewController.m */,
+				B870C23323FB0D34005527D7 /* Categories */,
 				B870C22023FB0CB2005527D7 /* Main.storyboard */,
 				B870C22323FB0CB6005527D7 /* Assets.xcassets */,
 				B870C22523FB0CB6005527D7 /* LaunchScreen.storyboard */,
@@ -74,6 +90,21 @@
 				B870C22923FB0CB6005527D7 /* main.m */,
 			);
 			path = CSInteractiveHeaders;
+			sourceTree = "<group>";
+		};
+		B870C23323FB0D34005527D7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B870C23123FB0D2C005527D7 /* UIScrollView+InteractiveHeader.h */,
+				B870C23023FB0D2C005527D7 /* UIScrollView+InteractiveHeader.m */,
+				B870C23623FB10F9005527D7 /* UINavigationBar+InteractiveHeader.h */,
+				B870C23723FB10F9005527D7 /* UINavigationBar+InteractiveHeader.m */,
+				B870C23923FB111C005527D7 /* UIImage+ImageWithColor.h */,
+				B870C23A23FB111C005527D7 /* UIImage+ImageWithColor.m */,
+				B870C23D23FB117A005527D7 /* UIColor+Interpolation.h */,
+				B870C23C23FB117A005527D7 /* UIColor+Interpolation.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +167,7 @@
 				B870C22723FB0CB6005527D7 /* LaunchScreen.storyboard in Resources */,
 				B870C22423FB0CB6005527D7 /* Assets.xcassets in Resources */,
 				B870C22223FB0CB2005527D7 /* Main.storyboard in Resources */,
+				B870C24023FB1509005527D7 /* banner.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B870C23E23FB117A005527D7 /* UIColor+Interpolation.m in Sources */,
 				B870C21F23FB0CB2005527D7 /* ViewController.m in Sources */,
+				B870C23223FB0D2C005527D7 /* UIScrollView+InteractiveHeader.m in Sources */,
+				B870C23B23FB111C005527D7 /* UIImage+ImageWithColor.m in Sources */,
+				B870C23823FB10F9005527D7 /* UINavigationBar+InteractiveHeader.m in Sources */,
 				B870C21923FB0CB2005527D7 /* AppDelegate.m in Sources */,
 				B870C22A23FB0CB6005527D7 /* main.m in Sources */,
 				B870C21C23FB0CB2005527D7 /* SceneDelegate.m in Sources */,
